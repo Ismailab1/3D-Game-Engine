@@ -1,0 +1,38 @@
+# Base style (Google is simple and widely used)
+BasedOnStyle: Google
+
+# Indentation
+IndentWidth: 4             # Use 4 spaces for indentation
+TabWidth: 4                # Tabs are represented as 4 spaces
+UseTab: Never              # Never use tabs, only spaces
+
+# Line Length
+ColumnLimit: 80            # Keep lines short for readability
+
+# Braces
+BreakBeforeBraces: Attach  # Keep braces on the same line (e.g., for if, while, etc.)
+
+# Namespace
+NamespaceIndentation: All  # Indent contents of namespaces
+
+# Includes
+SortIncludes: true         # Automatically sort includes alphabetically
+IncludeBlocks: Regroup     # Group standard/system includes separately from project headers
+
+# Function Formatting
+AllowShortFunctionsOnASingleLine: Inline    # Allow short functions to be on one line
+
+# Pointers and References
+PointerAlignment: Right    # Align pointers and references to the variable (e.g., `int* ptr;`)
+
+# Spaces
+SpaceBeforeParens: ControlStatements  # Add a space before parentheses in control statements
+SpacesInAngles: false                 # Do not add spaces inside template angle brackets
+SpacesInCStyleCastParentheses: false  # No spaces inside parentheses for C-style casts
+
+# Alignment
+AlignConsecutiveAssignments: false    # Do not align variable assignments
+AlignTrailingComments: true           # Align trailing comments for readability
+
+# Comments
+CommentPragmas: '^ IWYU pragma:'      # Allow specific pragmas for dependency management
