@@ -48,10 +48,20 @@ The following libraries are managed by `vcpkg`:
 - **Assimp**: Asset Import Library for 3D model formats.
 - **TBB**: Intel Threading Building Blocks for parallelism.
 - **Catch2**: Unit testing framework.
+- **SDL2**: Robust input handling for game controllers and extended devices.
+- **Bullet Physics**: High-performance physics simulation and collision detection.
+- **ImGui**: Debugging overlays and runtime GUI.
+- **nlohmann-json**: JSON library for scene serialization and deserialization.
+- **spdlog**: Fast logging library for debugging and runtime information.
 
 To install these dependencies via `vcpkg`:
 ```powershell
 vcpkg install glfw3:x64-windows glew:x64-windows glm:x64-windows assimp:x64-windows tbb:x64-windows catch2:x64-windows
+vcpkg install sdl2:x64-windows sdl2-image:x64-windows
+vcpkg install bullet3:x64-windows
+vcpkg install imgui:x64-windows
+vcpkg install nlohmann-json:x64-windows
+vcpkg install spdlog:x64-windows
 ```
 
 ---
@@ -117,6 +127,8 @@ Run the unit tests:
 ├── out/                # Build output (ignored in version control).
 │   ├── Debug/          # Debug build output.
 │   └── Release/        # Release build output.
+├── .clang-format       # Code formatting rules for consistency.
+├── .gitignore          # Git ignore file for excluded files and folders.
 ├── CMakeLists.txt      # Root CMake configuration file.
 └── README.md           # Project setup instructions and details.
 ```
