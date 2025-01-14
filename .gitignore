@@ -3,6 +3,21 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Build output
+/out/
+/CMakeFiles/
+CMakeCache.txt
+*.vcxproj.user
+*.log
+
+# IDE specific
+.vs/
+*.idea/
+
+# System files
+Thumbs.db
+.DS_Store
+
 # User-specific files
 *.rsuser
 *.suo
