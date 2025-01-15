@@ -13,6 +13,12 @@
         "jemalloc",
         "mimalloc",
         "tbb",
+        "sdl2",
+        "imgui",
+        "bullet3",
+        "spdlog",
+        "fmt",
+        "nlohmann-json",
         "catch2"
     ]
 }
