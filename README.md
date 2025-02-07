@@ -18,35 +18,36 @@ This is a **simple 3D game engine** designed for showcasing **memory management,
 
 ### **1️⃣ Clone the Repository**
 
-```sh
+```
  git clone https://github.com/ismailab1/3DGameEngine.git
  cd 3DGameEngine
- '''
+```
+
 
  This project uses vcpkg to manage dependencies. Ensure you have vcpkg installed, then run:
 
  ```sh
  vcpkg install glfw3 glew tbb sdl2 imgui nlohmann-json spdlog bullet3 assimp
- '''
+ ```
 
  Generate Build Files with CMake
 
  ```sh
  cmake -B out/build
- '''
+ ```
 
  Compile the Engine
 
  ```sh
  cmake --build out/build --config Debug
- '''
+ ```
 
  🚀 Running the Engine
 
  ```sh
  cd out/build/Sandbox/Debug
 ./Sandbox.exe
-'''
+```
 
 Alternatively, in Visual Studio:
 
@@ -58,7 +59,7 @@ Running Tests
 ```sh
 cd out/build/tests/Debug
 ./3DGameEngineTests.exe
-'''
+```
 
 3DGameEngine/
 │── engine/                 # Core Engine
