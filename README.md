@@ -60,7 +60,7 @@ Running Tests
 cd out/build/tests/Debug
 ./3DGameEngineTests.exe
 ```
-
+```sh
 3DGameEngine/
 │── engine/                 # Core Engine
 │   ├── include/            # Header files
@@ -77,6 +77,7 @@ cd out/build/tests/Debug
 │
 │── CMakeLists.txt          # Root CMake setup
 │── README.md               # This file
+```
 
 Dependencies
 
