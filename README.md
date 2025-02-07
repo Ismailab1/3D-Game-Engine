@@ -104,11 +104,11 @@ spdlog - Logging
 TBB - Multi-threading
 
 Assimp - Asset importing
-
+---
 **License**
 
 This project is licensed under the MIT License.
-
+---
 **Contact**
 
 For any inquiries, reach out at ismailabdullah1129@gmail.com
