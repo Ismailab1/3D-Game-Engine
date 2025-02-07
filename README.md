@@ -111,6 +111,7 @@ This project is licensed under the MIT License.
 
 Contact
 
+<<<<<<< HEAD
 For any inquiries, reach out at ismailabdullah1129@gmail.com
 ﻿# 3D Game Engine
 
@@ -209,4 +210,6 @@ This project is licensed under the MIT License.
 
 ## Contact
 
+=======
+>>>>>>> dfbaf273f9f34f0f21771eb09bf241109bfaea86
 For any inquiries, reach out at ismailabdullah1129@gmail.com
