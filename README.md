@@ -23,20 +23,20 @@ This is a **simple 3D game engine** designed for showcasing **memory management,
  cd 3DGameEngine
 ```
 
-
+2️⃣ Install Dependencies
  This project uses vcpkg to manage dependencies. Ensure you have vcpkg installed, then run:
 
  ```sh
  vcpkg install glfw3 glew tbb sdl2 imgui nlohmann-json spdlog bullet3 assimp
  ```
 
- Generate Build Files with CMake
+3️⃣ Generate Build Files with CMake
 
  ```sh
  cmake -B out/build
  ```
 
- Compile the Engine
+4️⃣ Compile the Engine
 
  ```sh
  cmake --build out/build --config Debug
@@ -55,11 +55,12 @@ Set Sandbox.exe as the Startup Project.
 
 Press F5 to run in debug mode.
 
-Running Tests
+🧪 Running Tests
 ```sh
 cd out/build/tests/Debug
 ./3DGameEngineTests.exe
 ```
+📁 Project Structure
 ```sh
 3DGameEngine/
 │── engine/                 # Core Engine
