@@ -1,0 +1,91 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeCXXInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeGenericSystem.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeRCInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckLibraryExists.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Compiler/MSVC.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FeatureSummary.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindPackageMessage.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindThreads.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Platform/Windows.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake
+E:/VisualStudio/projects/3D Game Engine/CMakeLists.txt
+E:/VisualStudio/projects/3D Game Engine/build/CMakeFiles/3.29.5-msvc4/CMakeCXXCompiler.cmake
+E:/VisualStudio/projects/3D Game Engine/build/CMakeFiles/3.29.5-msvc4/CMakeRCCompiler.cmake
+E:/VisualStudio/projects/3D Game Engine/build/CMakeFiles/3.29.5-msvc4/CMakeSystem.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/Catch2/Catch.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/Catch2/Catch2Config.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/Catch2/Catch2ConfigVersion.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/Catch2/Catch2Targets-debug.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/Catch2/Catch2Targets-release.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/Catch2/Catch2Targets.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/assimp/assimpConfig.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/assimp/assimpConfigVersion.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/assimp/assimpTargets-debug.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/assimp/assimpTargets-release.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/assimp/assimpTargets.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/bullet3/BulletConfig.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/bullet3/BulletConfigVersion.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/bullet3/BulletTargets-debug.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/bullet3/BulletTargets-release.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/bullet3/BulletTargets.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/fmt/fmt-config-version.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/fmt/fmt-config.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/fmt/fmt-targets-debug.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/fmt/fmt-targets-release.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/fmt/fmt-targets.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/glew/CopyImportedTargetProperties.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/glew/glew-config.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/glew/glew-targets-debug.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/glew/glew-targets-release.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/glew/glew-targets.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/glfw3/glfw3ConfigVersion.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/glfw3/glfw3Targets-debug.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/glfw3/glfw3Targets-release.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/glfw3/glfw3Targets.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/glm/glmConfig-debug.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/glm/glmConfig-release.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/glm/glmConfig.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/glm/glmConfigVersion.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/imgui/imgui-config.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/imgui/imgui-targets-debug.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/imgui/imgui-targets-release.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/imgui/imgui-targets.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/nlohmann_json/nlohmann_jsonConfig.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/nlohmann_json/nlohmann_jsonConfigVersion.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/nlohmann_json/nlohmann_jsonTargets.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/sdl2/SDL2Config.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/sdl2/SDL2ConfigVersion.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/sdl2/SDL2Targets-debug.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/sdl2/SDL2Targets-release.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/sdl2/SDL2Targets.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/sdl2/SDL2mainTargets-debug.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/sdl2/SDL2mainTargets-release.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/sdl2/SDL2mainTargets.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/sdl2/sdlfind.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/spdlog/spdlogConfig.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/spdlog/spdlogConfigTargets-debug.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/spdlog/spdlogConfigTargets-release.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/spdlog/spdlogConfigTargets.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/spdlog/spdlogConfigVersion.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/tbb/TBBConfig.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/tbb/TBBConfigVersion.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/tbb/TBBTargets-debug.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/tbb/TBBTargets-release.cmake
+E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/tbb/TBBTargets.cmake

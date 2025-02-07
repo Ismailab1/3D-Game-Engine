@@ -1,0 +1,5 @@
+E:/VisualStudio/projects/3D Game Engine/build/CMakeFiles/3DGameEngine.dir
+E:/VisualStudio/projects/3D Game Engine/build/CMakeFiles/3DGameEngineTests.dir
+E:/VisualStudio/projects/3D Game Engine/build/CMakeFiles/RUN_TESTS.dir
+E:/VisualStudio/projects/3D Game Engine/build/CMakeFiles/ALL_BUILD.dir
+E:/VisualStudio/projects/3D Game Engine/build/CMakeFiles/ZERO_CHECK.dir
