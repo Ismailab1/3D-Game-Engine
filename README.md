@@ -23,26 +23,26 @@ This is a **simple 3D game engine** designed for showcasing **memory management,
  cd 3DGameEngine
 ```
 
-###2️⃣ Install Dependencies
+### **2️⃣ Install Dependencies**
  This project uses vcpkg to manage dependencies. Ensure you have vcpkg installed, then run:
 
  ```sh
  vcpkg install glfw3 glew tbb sdl2 imgui nlohmann-json spdlog bullet3 assimp
  ```
 
-###3️⃣ Generate Build Files with CMake
+### **3️⃣ Generate Build Files with CMake**
 
  ```sh
  cmake -B out/build
  ```
 
-###4️⃣ Compile the Engine
+### **4️⃣ Compile the Engine**
 
  ```sh
  cmake --build out/build --config Debug
  ```
 ---
-##🚀 Running the Engine
+## **🚀 Running the Engine**
 
  ```sh
  cd out/build/Sandbox/Debug
@@ -56,14 +56,14 @@ Set Sandbox.exe as the Startup Project.
 Press F5 to run in debug mode.
 
 ---
-##🧪 Running Tests
+## **🧪 Running Tests**
  
 ```sh
 cd out/build/tests/Debug
 ./3DGameEngineTests.exe
 ```
 ---
-##📁 Project Structure
+## **📁 Project Structure**
  
 ```sh
 3DGameEngine/
@@ -85,7 +85,7 @@ cd out/build/tests/Debug
 ```
 
 ---
-##📦 Dependencies
+## **📦 Dependencies**
 
 GLFW - Windowing & Input
 
@@ -105,10 +105,10 @@ TBB - Multi-threading
 
 Assimp - Asset importing
 
- License
+**License**
 
 This project is licensed under the MIT License.
 
-Contact
+**Contact**
 
 For any inquiries, reach out at ismailabdullah1129@gmail.com
