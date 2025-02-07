@@ -23,26 +23,26 @@ This is a **simple 3D game engine** designed for showcasing **memory management,
  cd 3DGameEngine
 ```
 
-###2️⃣ Install Dependencies
+### **2️⃣ Install Dependencies**
  This project uses vcpkg to manage dependencies. Ensure you have vcpkg installed, then run:
 
  ```sh
  vcpkg install glfw3 glew tbb sdl2 imgui nlohmann-json spdlog bullet3 assimp
  ```
 
-###3️⃣ Generate Build Files with CMake
+### **3️⃣ Generate Build Files with CMake**
 
  ```sh
  cmake -B out/build
  ```
 
-###4️⃣ Compile the Engine
+### **4️⃣ Compile the Engine**
 
  ```sh
  cmake --build out/build --config Debug
  ```
 ---
-##🚀 Running the Engine
+## **🚀 Running the Engine**
 
  ```sh
  cd out/build/Sandbox/Debug
@@ -56,14 +56,14 @@ Set Sandbox.exe as the Startup Project.
 Press F5 to run in debug mode.
 
 ---
-##🧪 Running Tests
+## **🧪 Running Tests**
  
 ```sh
 cd out/build/tests/Debug
 ./3DGameEngineTests.exe
 ```
 ---
-##📁 Project Structure
+## **📁 Project Structure**
  
 ```sh
 3DGameEngine/
@@ -85,7 +85,7 @@ cd out/build/tests/Debug
 ```
 
 ---
-##📦 Dependencies
+## **📦 Dependencies**
 
 GLFW - Windowing & Input
 
@@ -105,111 +105,10 @@ TBB - Multi-threading
 
 Assimp - Asset importing
 
- License
-
+**License**
+---
 This project is licensed under the MIT License.
 
-Contact
-
-<<<<<<< HEAD
-For any inquiries, reach out at ismailabdullah1129@gmail.com
-﻿# 3D Game Engine
-
-## 📌 Overview
-This is a **simple 3D game engine** designed for showcasing **memory management, graphics programming**, and efficient system design. It is built using **C++17** and leverages modern libraries such as **GLFW, GLEW, SDL2, ImGui, Bullet Physics, and spdlog**.
-
-## 🎯 Features
-- **Core Engine**: Handles application lifecycle and event management.
-- **Memory Management**: Efficient allocation and deallocation with `MemoryManager`.
-- **Job System**: Multi-threaded task execution with `JobSystem`.
-- **Renderer**: OpenGL-based rendering pipeline.
-- **Physics**: Uses Bullet Physics for realistic object interactions.
-- **File System**: Handles asset loading and file I/O operations.
-- **Logging System**: Uses `spdlog` for structured logging.
-
+**Contact**
 ---
-
-## 🔧 Installation & Setup
-
-### **1️⃣ Clone the Repository**
-```
- git clone https://github.com/ismailab1/3DGameEngine.git
- cd 3DGameEngine
-```
-### **2️⃣ Install Dependencies**
-This project uses vcpkg to manage dependencies. Ensure you have vcpkg installed, then run:
- ```sh
- vcpkg install glfw3 glew tbb sdl2 imgui nlohmann-json spdlog bullet3 assimp
- ```
-### **3️⃣ Generate Build Files with CMake**
- ```sh
- cmake -B out/build
- ```
-### **4️⃣ Compile the Engine**
- ```sh
- cmake --build out/build --config Debug
- ```
----
-
-## 🚀 Running the Engine
- ```sh
- cd out/build/Sandbox/Debug
-./Sandbox.exe
-```
-Alternatively, in Visual Studio:
-
-Set Sandbox.exe as the Startup Project.
-
-Press F5 to run in debug mode.
-
----
-
-## 🧪 Running Tests
-```sh
-cd out/build/tests/Debug
-./3DGameEngineTests.exe
-```
----
-
-## 📁 Project Structure
-```sh
-3DGameEngine/
-│── engine/                 # Core Engine
-│   ├── include/            # Header files
-│   ├── src/                # Implementation
-│   ├── CMakeLists.txt      # Engine build setup
-│
-│── Sandbox/                # Testing Environment
-│   ├── Sandbox.cpp         # Main entry for debugging
-│   ├── CMakeLists.txt      # Sandbox build setup
-│
-│── tests/                  # Unit Tests
-│   ├── test_main.cpp       # Catch2 test entry
-│   ├── CMakeLists.txt      # Test setup
-│
-│── CMakeLists.txt          # Root CMake setup
-│── README.md               # This file
-```
----
-
-## 📦 Dependencies
-
-- GLFW - Windowing & Input
-- GLEW - OpenGL Extension Wrangler
-- SDL2 - Alternative input and window handling
-- ImGui - GUI for debugging
-- Bullet Physics - Physics simulation
-- nlohmann-json - JSON parsing
-- spdlog - Logging
-- TBB - Multi-threading
-- Assimp - Asset importing
-
-## License
-
-This project is licensed under the MIT License.
-
-## Contact
-
-=======
->>>>>>> dfbaf273f9f34f0f21771eb09bf241109bfaea86
 For any inquiries, reach out at ismailabdullah1129@gmail.com
