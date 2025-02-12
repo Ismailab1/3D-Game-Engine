@@ -1,0 +1,42 @@
+name: Build and Test 3DGameEngine
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set Up vcpkg
+        run: |
+          git clone https://github.com/microsoft/vcpkg.git
+          ./external/vcpkg/bootstrap-vcpkg.bat
+          ./external/vcpkg/vcpkg integrate install
+        shell: cmd
+
+      - name: Install Dependencies
+        run: |
+          ./external/vcpkg/vcpkg install glfw3 glew tbb sdl2 imgui nlohmann-json spdlog bullet3 assimp
+        shell: cmd
+
+      - name: Configure CMake
+        run: cmake -B out/build -DCMAKE_TOOLCHAIN_FILE=./external/vcpkg/scripts/buildsystems/vcpkg.cmake
+
+      - name: Build Project
+        run: cmake --build out/build --config Debug
+
+      - name: Run Tests
+        run: |
+          cd out/build/tests/Debug
+          ./3DGameEngineTests.exe
+        shell: cmd
