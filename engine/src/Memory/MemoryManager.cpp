@@ -51,12 +51,12 @@ void* MemoryManager::Allocate(size_t size, const char* tag) {
         m_Allocations[ptr] = { size, tag, std::chrono::steady_clock::now() };
         m_TotalAllocated += size;
 
-        // Log the allocation
-        spdlog::info("[MemoryManager] Allocated {} bytes at {}, Tag='{}'", size, ptr, tag);
+        // Log the allocation through the profile logger
+        LOG_PROFILE_INFO("[MemoryManager] Allocated {} bytes at {}, Tag='{}'", size, ptr, tag);
     }
     else {
         // If allocation fails, log an error
-        spdlog::error("[MemoryManager] Allocation failed for {} bytes!", size);
+        LOG_PROFILE_ERROR("[MemoryManager] Allocation failed for {} bytes!", size);
     }
 
     // End profiling and log the duration in microseconds
@@ -96,12 +96,12 @@ void MemoryManager::Deallocate(void* ptr) {
         // Free the memory
         std::free(ptr);
 
-        // Log successful deallocation
-        spdlog::info("[MemoryManager] Deallocated {} bytes at {}, Tag='{}'", size, ptr, tag);
+        // Log successful deallocation through the profile logger
+        LOG_PROFILE_INFO("[MemoryManager] Deallocated {} bytes at {}, Tag='{}'", size, ptr, tag);
     }
     else {
         // Attempt to free something not found in our map
-        spdlog::warn("[MemoryManager] Attempted to free unknown or already freed pointer {}", ptr);
+        LOG_PROFILE_WARN("[MemoryManager] Attempted to free unknown or already freed pointer {}", ptr);
     }
 
     // End profiling and log the duration in microseconds
@@ -129,4 +129,14 @@ bool MemoryManager::HasMemoryLeaks() const {
 
     // If m_Allocations is empty, then no leaks
     return !m_Allocations.empty();
+}
+
+size_t MemoryManager::GetTotalAllocated() const {
+    std::lock_guard<std::mutex> lock(m_Mutex);
+    return m_TotalAllocated;
+}
+
+size_t MemoryManager::GetTotalDeallocated() const {
+    std::lock_guard<std::mutex> lock(m_Mutex);
+    return m_TotalDeallocated;
 }

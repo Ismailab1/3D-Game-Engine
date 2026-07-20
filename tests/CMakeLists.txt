@@ -1,6 +1,5 @@
-set(Catch2_DIR "E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/catch2")
 find_package(Catch2 CONFIG REQUIRED)
-find_package(spdlog REQUIRED)
+find_package(spdlog CONFIG REQUIRED)
 
 add_executable(3DGameEngineTests
     test_main.cpp
@@ -13,16 +12,11 @@ add_executable(3DGameEngineTests
     test_Renderer.cpp
 )
 
-# If your engine's public headers are in /engine/include, add that path:
-target_include_directories(3DGameEngineTests
-    PRIVATE
-        ${CMAKE_SOURCE_DIR}/engine/include
-)
-
+# 3DGameEngine exposes engine headers as PUBLIC; no extra include_directories needed
 target_link_libraries(3DGameEngineTests
     PRIVATE
-        3DGameEngine            # The engine library (already links SPDLog)
-        Catch2::Catch2WithMain  # If using the "WithMain" variant
+        3DGameEngine
+        Catch2::Catch2   # test_main.cpp provides its own main() via CATCH_CONFIG_RUNNER
         spdlog::spdlog
 )
 

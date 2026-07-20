@@ -4,21 +4,7 @@
     "description": "A portfolio 3D game engine showcasing system programming skills.",
     "dependencies": [
         "glfw3",
-        "glew",
-        "glm",
-        "assimp",
-        "stb",
-        "libzip",
-        "boost-filesystem",
-        "jemalloc",
-        "mimalloc",
-        "tbb",
-        "sdl2",
-        "imgui",
-        "bullet3",
         "spdlog",
-        "fmt",
-        "nlohmann-json",
         "catch2"
     ]
 }

@@ -10,33 +10,46 @@ on:
       - main
 
 jobs:
-  build:
+  # ── Windows (MSVC + vcpkg) ───────────────────────────────────────────────
+  build-windows:
     runs-on: windows-latest
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Set Up vcpkg
-        run: |
-          git clone https://github.com/microsoft/vcpkg.git
-          ./external/vcpkg/bootstrap-vcpkg.bat
-          ./external/vcpkg/vcpkg integrate install
+      # cmake/Vcpkg.cmake auto-discovers the runner's pre-installed vcpkg
+      # (VCPKG_ROOT is set on windows-latest) and manifest mode installs the
+      # three packages listed in vcpkg.json automatically.
+      - name: Configure and Build
         shell: cmd
-
-      - name: Install Dependencies
-        run: |
-          ./external/vcpkg/vcpkg install glfw3 glew tbb sdl2 imgui nlohmann-json spdlog bullet3 assimp
-        shell: cmd
-
-      - name: Configure CMake
-        run: cmake -B out/build -DCMAKE_TOOLCHAIN_FILE=./external/vcpkg/scripts/buildsystems/vcpkg.cmake
-
-      - name: Build Project
-        run: cmake --build out/build --config Debug
+        run: scripts\build.bat Debug
 
       - name: Run Tests
-        run: |
-          cd out/build/tests/Debug
-          ./3DGameEngineTests.exe
         shell: cmd
+        run: out\build\windows-Debug\tests\3DGameEngineTests.exe
+
+  # ── Ubuntu (GCC + vcpkg bootstrapped by cmake/Vcpkg.cmake) ──────────────
+  build-ubuntu:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y \
+            ninja-build \
+            libgl1-mesa-dev \
+            libxrandr-dev libxinerama-dev libxcursor-dev \
+            libxi-dev libxext-dev
+
+      # cmake/Vcpkg.cmake will clone + bootstrap vcpkg into external/vcpkg/
+      # on first run; manifest mode then installs glfw3, spdlog, catch2.
+      - name: Configure and Build
+        run: bash scripts/build.sh Debug
+
+      - name: Run Tests
+        run: out/build/linux-Debug/tests/3DGameEngineTests

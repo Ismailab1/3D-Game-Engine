@@ -11,6 +11,10 @@ std::shared_ptr<spdlog::logger> Logger::s_ProfileLogger;
  *        Here we set a common pattern and attach color console sinks.
  */
 void Logger::Init() {
+    // Guard: if already initialized, do nothing
+    if (s_EngineLogger && s_ClientLogger && s_ProfileLogger)
+        return;
+
     // Define a log pattern: "[time] [log-level] message"
     // %^ and %$ are spdlog color markers for highlight.
     spdlog::set_pattern("[%T] [%^%l%$] %v");

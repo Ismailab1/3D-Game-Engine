@@ -45,6 +45,12 @@ public:
      */
     bool HasMemoryLeaks() const;
 
+    /** @brief Returns total bytes allocated since startup. */
+    size_t GetTotalAllocated() const;
+
+    /** @brief Returns total bytes deallocated since startup. */
+    size_t GetTotalDeallocated() const;
+
 private:
     // Private constructor and destructor for singleton pattern
     MemoryManager();

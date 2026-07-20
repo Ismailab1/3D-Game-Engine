@@ -6,53 +6,30 @@ project(3DGameEngine LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Explicitly define library directories
-set(GLFW3_DIR             "E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/glfw3")
-set(GLEW_DIR              "E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/glew")
-set(TBB_DIR               "E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/tbb")
-set(IMGUI_DIR             "E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/imgui")
-set(NLOHMANN_JSON_DIR     "E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/nlohmann_json")
-set(SPDLOG_DIR            "E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/spdlog")
-set(BULLET_DIR            "E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/bullet3")
-set(ASSIMP_DIR            "E:/VisualStudio/tools/vcpkg/installed/x64-windows/share/assimp")
-
-# Find required packages
+# Find packages actually used by implemented code
 find_package(glfw3 CONFIG REQUIRED)
-find_package(GLEW CONFIG REQUIRED)
-find_package(TBB CONFIG REQUIRED)
-find_package(imgui CONFIG REQUIRED)
-find_package(nlohmann_json CONFIG REQUIRED)
 find_package(spdlog CONFIG REQUIRED)
-find_package(Bullet CONFIG REQUIRED)
-find_package(assimp CONFIG REQUIRED)
 
 # Create static library for 3DGameEngine
 add_library(3DGameEngine STATIC
-    src/Core/Application.cpp include/Core/Application.h
-    src/Memory/MemoryManager.cpp include/Memory/MemoryManager.h
-    src/Threading/JobSystem.cpp include/Threading/JobSystem.h
-    src/Renderer/Renderer.cpp include/Renderer/Renderer.h
-    src/Physics/Physics.cpp include/Physics/Physics.h
-    src/IO/FileSystem.cpp include/IO/FileSystem.h
-    src/Utils/Logger.cpp include/Utils/Logger.h
- "Include/Core/Window.h" "src/Core/Window.cpp" "Include/Core/Input.h" "src/Core/Input.cpp")
-
-# Ensure all include directories are properly set
-target_include_directories(3DGameEngine PRIVATE 
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
-    "E:/VisualStudio/tools/vcpkg/installed/x64-windows/include"
+    src/Core/Application.cpp Include/Core/Application.h
+    src/Core/Window.cpp      Include/Core/Window.h
+    src/Core/Input.cpp       Include/Core/Input.h
+    src/Memory/MemoryManager.cpp Include/Memory/MemoryManager.h
+    src/Threading/JobSystem.cpp  Include/Threading/JobSystem.h
+    src/Renderer/Renderer.cpp    Include/Renderer/Renderer.h
+    src/Physics/Physics.cpp      Include/Physics/Physics.h
+    src/IO/FileSystem.cpp        Include/IO/FileSystem.h
+    src/Utils/Logger.cpp         Include/Utils/Logger.h
+    src/Utils/Profiling.cpp      Include/Utils/Profiling.h
 )
 
-# Explicitly link required libraries
+# Public so consumers (Sandbox, tests) get engine headers automatically
+target_include_directories(3DGameEngine PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/Include
+)
+
 target_link_libraries(3DGameEngine PRIVATE
     glfw
-    GLEW::GLEW
-    TBB::tbb
-    imgui::imgui
-    nlohmann_json::nlohmann_json
     spdlog::spdlog
-    BulletDynamics
-    BulletCollision
-    LinearMath
-    assimp::assimp
 )

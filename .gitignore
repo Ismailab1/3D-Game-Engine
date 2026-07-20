@@ -10,6 +10,9 @@ CMakeCache.txt
 *.vcxproj.user
 *.log
 
+# vcpkg — auto-cloned by cmake/Vcpkg.cmake on machines where it isn't installed
+/external/vcpkg/
+
 # IDE specific
 .vs/
 *.idea/

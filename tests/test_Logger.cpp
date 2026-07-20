@@ -22,6 +22,11 @@ TEST_CASE("Logger Initialization", "[logger]") {
     REQUIRE_NOTHROW(LOG_PROFILE_INFO("Profile logger test message"));
 }
 TEST_CASE("Logger Levels", "[logger]") {
+	// Save original levels
+	auto origEngine  = Logger::GetEngineLogger()->level();
+	auto origClient  = Logger::GetClientLogger()->level();
+	auto origProfile = Logger::GetProfileLogger()->level();
+
 	// Set log levels
 	Logger::GetEngineLogger()->set_level(spdlog::level::info);
 	Logger::GetClientLogger()->set_level(spdlog::level::warn);
@@ -33,4 +38,9 @@ TEST_CASE("Logger Levels", "[logger]") {
 	REQUIRE_NOTHROW(LOG_CLIENT_WARN("This should be logged"));
 	REQUIRE_NOTHROW(LOG_PROFILE_TRACE("This should not be logged"));
 	REQUIRE_NOTHROW(LOG_PROFILE_ERROR("This should be logged"));
+
+	// Restore original levels so subsequent tests are not affected
+	Logger::GetEngineLogger()->set_level(origEngine);
+	Logger::GetClientLogger()->set_level(origClient);
+	Logger::GetProfileLogger()->set_level(origProfile);
 }
